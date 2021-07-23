@@ -1,0 +1,114 @@
+body {
+    background-color: whitesmoke;
+}
+
+#mainmenu{
+    position: relative;
+    display: flex;
+    float: left;
+    min-height: 100%;
+    width: 260px;
+    z-index: 99999;
+}
+
+#outer-wrapper{
+    box-sizing: border-box;
+}
+
+#header-wrapper{
+    box-sizing: border-box;
+}
+
+#main-wrapper {
+    width: 66.66666667%;
+    box-sizing: border-box;
+}
+
+#main-wrapper .grid-posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-gap: 20px; */
+}
+
+#main-wrapper .blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#main-wrapper article {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: transparent;
+    width: auto;
+    margin-right: 20px;
+    box-shadow: 0 10px 20px 0 rgb(30 30 30 / 7%);
+}
+
+#main-wrapper article .post-thumbnail {
+    margin-bottom: 10px;
+    width: auto;
+    height: 150px;
+}
+
+#main-wrapper article .post-thumbnail img {
+    display: block;
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+#main-wrapper article .post-content .post-tag {
+    font-size: 11px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#main-wrapper article .post-content .post-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4em;
+    text-decoration: none;
+    margin: 0;
+}
+
+#main-wrapper article .post-content .post-title a {
+    text-decoration: none;
+}
+
+#main-wrapper article .post-content .post-meta {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#main-wrapper article .post-content .post-meta .post-author a {
+    color: #111111;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#main-wrapper article .post-content .post-meta .post-author:visited {
+    text-decoration: none;
+}
+
+#main-wrapper article .post-content .post-meta .post-author::after {
+    content: '-';
+    margin: 0 2px;
+}
+
+#main-wrapper article .post-content .post-meta .post-date {}
+
+#sidebar-wrapper {
+    width: 33.33333333%;
+    box-sizing: border-box;
+}
+
+#footer-wrapper{
+    box-sizing: border-box;
+}
